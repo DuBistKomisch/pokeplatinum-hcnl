@@ -25,7 +25,8 @@ const PokeMartCommonItem PokeMartCommonItems[] = {
 	{ ITEM_ESCAPE_ROPE, 0x2 },
 	{ ITEM_REPEL, 0x2 },
 	{ ITEM_SUPER_REPEL, 0x3 },
-	{ ITEM_MAX_REPEL, 0x4 }
+	{ ITEM_MAX_REPEL, 0x4 },
+	{ ITEM_RARE_CANDY, 0x1 }
 };
 
 const u16 JubilifeMartSpecialties[] = {
@@ -100,6 +101,7 @@ const u16 VeilstoneDeptStoreStock_1F_RIGHT[] = {
 	ITEM_ICE_HEAL,
 	ITEM_AWAKENING,
 	ITEM_FULL_HEAL,
+	ITEM_RARE_CANDY,
 	0xffff
 };
 
@@ -116,6 +118,7 @@ const u16 VeilstoneDeptStoreStock_1F_LEFT[] = {
 	ITEM_FLAME_MAIL,
 	ITEM_BUBBLE_MAIL,
 	ITEM_SPACE_MAIL,
+	ITEM_RARE_CANDY,
 	0xffff
 };
 
