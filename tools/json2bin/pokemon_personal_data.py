@@ -13,12 +13,7 @@ from consts.generated.py import (
 
 
 def parse_ev_yields(ev_yields: dict, size: int, _: None) -> bytes:
-    packed = ev_yields['hp']
-    packed = packed + (ev_yields['attack'] << 2)
-    packed = packed + (ev_yields['defense'] << 4)
-    packed = packed + (ev_yields['speed'] << 6)
-    packed = packed + (ev_yields['special_attack'] << 8)
-    packed = packed + (ev_yields['special_defense'] << 10)
+    packed = 0
     return packed.to_bytes(size, 'little')
 
 def parse_color(sprite: dict, size: int, _: None) -> bytes:
