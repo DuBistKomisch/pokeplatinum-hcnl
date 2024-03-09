@@ -4146,7 +4146,8 @@ static BOOL BattleController_ReplaceFainted(BattleSystem *battleSys, BattleConte
 
     if (battleCtx->command == BATTLE_CONTROL_EXEC_SCRIPT) {
         if ((battleType & BATTLE_TYPE_FORCED_SET_MODE) == FALSE
-                && BattleSystem_Ruleset(battleSys) == 0 // switch mode
+                //&& BattleSystem_Ruleset(battleSys) == 0 // switch mode
+                && FALSE
                 && ((battleCtx->battlerStatusFlags[0] & BATTLER_STATUS_SWITCHING) == FALSE
                     || (battleCtx->battlerStatusFlags[1] & BATTLER_STATUS_SWITCHING) == FALSE)
                 && BattleSystem_AnyReplacementMons(battleSys, battleCtx, BATTLER_US)) {
