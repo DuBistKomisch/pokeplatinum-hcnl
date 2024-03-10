@@ -10849,7 +10849,8 @@ static void BattleScript_CatchMonTask (SysTask * param0, void * param1)
     case 17:
         if (sub_0200384C(v4) == 0) {
             {
-                v2->seqNum = 18;
+                //v2->seqNum = 18;
+                v2->seqNum = 19;
 
                 sub_02015738(ov16_0223E220(v2->battleSys), 0);
                 sub_02003858(v4, 1);
@@ -10867,7 +10868,8 @@ static void BattleScript_CatchMonTask (SysTask * param0, void * param1)
     break;
     case 19:
         if (BattleContext_IOBufferVal(v2->battleCtx, 0)) {
-            if (BattleContext_IOBufferVal(v2->battleCtx, 0) == 0xff) {
+            //if (BattleContext_IOBufferVal(v2->battleCtx, 0) == 0xff) {
+            if (FALSE) {
                 v2->seqNum = 22;
             } else {
                 sub_02015738(ov16_0223E220(v2->battleSys), 1);
